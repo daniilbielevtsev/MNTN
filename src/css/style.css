@@ -11,7 +11,25 @@ body {
   color: var(--color-textPrimeri);
   background-color: var(--color-bagraund);
 }
+.container {
+  max-width: 1760px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /*============================================header=================================*/
+.header {
+  padding-top: 65px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 93.22%;
+  padding: 15px;
+  margin: auto;
+}
 .logo {
   font-family: "chonburi", sans-serif;
   font-weight: 400;
@@ -24,6 +42,18 @@ body {
   font-size: 17px;
 }
 /*======================================main=======================================*/
+.hero {
+  padding-top: 198px;
+  padding-bottom: 744px;
+}
+.hero-text {
+  margin-bottom: 32px;
+}
+.hero-container {
+  max-width: 950px;
+  padding: 15px;
+  margin: auto;
+}
 .hero-text {
   letter-spacing: 0.33em;
   text-transform: uppercase;
@@ -34,6 +64,18 @@ body {
   font-size: 88px;
   line-height: 114%;
   text-transform: capitalize;
+  margin-bottom: 32px;
+}
+.travel-step {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  gap: 115px;
+  align-items: center;
+}
+.tep body {
+  gap: 27px;
+  padding-left: 150px;
 }
 .step-text {
   font-weight: 900;
@@ -55,7 +97,14 @@ body {
   color: var(--colot-text);
   font-weight: 900px;
 }
+/*=============================footer========================================*/
+.footer-container {
+  display: flex;
+  gap: 200px;
+}
 .footer-info-text {
+  flex-grow: 1;
+  flex-direction: column;
   font-family: "Chivo", sans-serif;
   font-weight: 900;
   font-size: 18px;
@@ -68,11 +117,16 @@ body {
   opacity: 0.5;
 }
 .blog-titel {
+  margin-bottom: 25px;
   font-weight: 900;
   font-size: 24px;
   line-height: 133%;
   color: var(--colot-text);
 }
 .blog-link .mntn-link {
-  line-height: 178%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 16px;
+  line-height: 1.77778;
 }
