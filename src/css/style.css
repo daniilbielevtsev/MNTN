@@ -10,8 +10,30 @@ body {
   font-weight: 700;
   color: var(--color-textPrimeri);
   background-color: var(--color-bagraund);
+  background-image: url(../imges/BG.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  /* background-size: contain; */
+}
+.container {
+  max-width: 1507px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /*============================================header=================================*/
+.header {
+  padding-top: 65px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 91.7%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .logo {
   font-family: "chonburi", sans-serif;
   font-weight: 400;
@@ -19,14 +41,66 @@ body {
   letter-spacing: 0.01em;
   text-transform: uppercase;
 }
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .action-link {
   font-weight: 900;
   font-size: 17px;
+  display: flex;
+  background-image: url(../imges/cart.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
+  gap: 8px;
+}
+.action-link::before {
+  content: "";
+  width: 24px;
+  height: 24px;
 }
 /* ================================main=============================================== */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 745px;
+}
 .hero-subtitel {
   letter-spacing: 0.33em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.hero-subtitel::before {
+  content: "";
+  width: 72px;
+  height: 2px;
+  background-color: var(--colot-text);
+}
+.hero-container {
+  max-width: 980px;
+}
+.hero-subtitel {
+  margin-bottom: 32px;
+}
+.hero-titel {
+  margin-bottom: 32px;
+}
+.hero-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.hero-link::after {
+  content: "";
+  width: 16px;
+  height: 24px;
+  background-image: url(../imges/arrow_downward_24px.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero-titel {
   font-family: "Cinzel", serif;
@@ -40,6 +114,48 @@ body {
   letter-spacing: 0.33em;
   text-transform: uppercase;
   color: var(--colot-text);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.step-text::before {
+  content: "";
+  width: 72px;
+  height: 2px;
+  background-color: var(--colot-text);
+}
+.travel {
+  padding-bottom: 200px;
+}
+.travel-item {
+  margin-bottom: 200px;
+}
+.travel-item :last-child {
+  margin-bottom: 0px;
+}
+.travel-step {
+  display: flex;
+  gap: 115px;
+  align-items: center;
+}
+.step-body {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding-left: 150px;
+  background-image: url(../imges/cart01.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-top: 50px;
+}
+.travel-item:nth-child(2) .step-body {
+  background-image: url(../imges/cart02.svg);
+}
+.travel-item:nth-child(3) .step-body {
+  background-image: url(../imges/cart03.svg);
+}
+.travel-item:nth-child(even) .step-photo {
+  order: -1;
 }
 .step-titel {
   font-family: "Cinzel", serif;
@@ -53,10 +169,35 @@ body {
 .step-link {
   font-weight: 900;
   color: var(--colot-text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.step-link::after {
+  content: "";
+  background-image: url(/src/arrow_downward_24px.svg);
+  width: 24px;
+  height: 16px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* ========================================footer=========================================== */
+.footer-container {
+  display: flex;
+  gap: 200px;
+}
+.footer-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .footer-info-text {
   font-weight: 900;
   line-height: 178%;
+  flex-grow: 1;
+  max-width: 303px;
 }
 .footer-info-copyrith {
   line-height: 178%;
@@ -71,4 +212,14 @@ body {
 }
 .blog-item {
   line-height: 178%;
+}
+.blog-list,
+.mntn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.blog-link,
+.mntn-link {
+  line-height: 1.77778;
 }
